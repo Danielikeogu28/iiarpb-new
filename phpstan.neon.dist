@@ -1,0 +1,19 @@
+includes:
+  - ./vendor/nunomaduro/larastan/extension.neon
+  - ./phpstan-baseline.neon
+
+parameters:
+  paths:
+    - app/
+
+  #level 9 is the most wicked
+  level: 8
+
+#   ignoreErrors:
+#     - '#PHPDoc tag @var#'
+#
+#   excludePaths:
+#      - ./*/*/FileToBeExcluded.php
+#
+  checkMissingIterableValueType: false
+  checkGenericClassInNonGenericObjectType: false
